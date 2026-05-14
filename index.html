@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span>&lt;</span>Dev<span class="highlight">Folio</span><span>/&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="nav-btns">
+          <a href="#" class="btn btn-sm btn-outline" id="download-cv">Resume</a>
+          <a href="https://www.linkedin.com/in/alokkumar004" target="_blank" class="btn btn-sm btn-primary">Hire Me</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-title">Alok Kumar</h1>
+      <h2 class="hero-subtitle">
+        Full Stack <span class="typewriter" id="typewriter"></span>
+      </h2>
+      <p class="hero-description">
+      <h4>I am a passionate Full Stack Developer with a strong interest in building modern and user-friendly web
+        applications. I enjoy working on both front-end and back-end technologies, and I am always eager to learn new
+        tools and frameworks. I like solving real-world problems through coding and continuously improving my skills to
+        stay updated with the latest trends in web development.</h4>
+      </p>
+
+      <div class="hero-stats">
+
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-container">
+        <div class="image-border">
+          <div class="image-placeholder">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <p class="section-subtitle"></p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Web Developer & Designer</h3>
+          <p>
+            I'm a 2nd-year B.Tech student in Information Technology at Narula Institute of Technology, and frontend & backend-focused developer with strong fundamentals.
+
+            creating modern and responsive websites. I enjoy working
+            on both front-end and back-end development and continuously
+            learning new technologies to improve my skills. My goal is
+            to build user-friendly and innovative web applications that
+            solve real-world problems.
+          </p>
+          <p>
+            <!-- Mera focus always user experience pe rehta hai. Main ensure karta
+            hun ki jo website banau wo not only beautiful ho balki fast aur
+            accessible bhi ho. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          My <span class="highlight">Skills</span>
+        </h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-css3"></i>
+          </div>
+          <h3>Tailwind CSS</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <h3>Node.js</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          My <span class="highlight">Projects</span>
+        </h2>
+        <p class="section-subtitle">Kuch kaam jo maine kiye hain</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="api">API</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>
+              Full featured online store with cart, payments aur admin panel
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>Kanban board style task management app with drag & drop</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="design">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>UI/UX Dashboard</h3>
+            <p>Modern dashboard design with charts aur analytics</p>
+            <div class="project-tags">
+              <span>Figma</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="api">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Chatbot API</h3>
+            <p>RESTful API for AI chatbot with natural language processing</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>NLP</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-weather"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>Real-time weather forecast with location detection</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>API</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="design">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Mobile App Design</h3>
+            <p>Fitness tracking app UI design with dark mode</p>
+            <div class="project-tags">
+              <span>Figma</span>
+              <span>Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <div class="container" style="text-align: center;">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="highlight">Certificates</span></h2>
+        <p class="section-subtitle">Meri achievements aur certifications</p>
+      </div>
+      <a href="#" class="btn btn-primary">
+        <i class="fas fa-certificate"></i> View Certificates
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Contact <span class="highlight">Me</span>
+        </h2>
+        <p class="section-subtitle">Mseages bhejo, reply zaroor deta hun</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>alokkumar0606216@gamil.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 7322862141</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Kolkata, India</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alokkumar004" target="_blank" title="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <p>Designed & Built by Alok Kumar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
