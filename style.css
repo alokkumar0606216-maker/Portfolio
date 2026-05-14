@@ -1,8 +1,3 @@
-/* ==========================================
-   PORTFOLIO - CSS STYLES
-   ========================================== */
-
-/* CSS Variables */
 :root {
   --primary: #6366f1;
   --primary-dark: #4f46e5;
@@ -129,6 +124,7 @@ img {
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: var(--transition);
+  background-color:whitesmoke;
 }
 
 .navbar.scrolled {
