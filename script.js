@@ -7,6 +7,7 @@ const loader = document.getElementById("loader");
 const navbar = document.getElementById("navbar");
 const navMenu = document.getElementById("nav-menu");
 const hamburger = document.getElementById("hamburger");
+const themeToggle = document.getElementById("theme-toggle");
 const backToTop = document.getElementById("back-to-top");
 const contactForm = document.getElementById("contact-form");
 const toast = document.getElementById("toast");
@@ -89,9 +90,30 @@ navLinks.forEach((link) => {
 });
 
 // ==========================================
-// 4. THEME (Light Mode Default)
+// 4. THEME TOGGLE - Dark/Light Mode (Light Default)
 // ==========================================
-document.documentElement.setAttribute("data-theme", "light");
+const savedTheme = localStorage.getItem("theme") || "light";
+document.documentElement.setAttribute("data-theme", savedTheme);
+updateThemeIcon(savedTheme);
+
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+  updateThemeIcon(newTheme);
+
+  showToast(
+    "theme",
+    newTheme === "dark" ? "Dark mode enabled! 🌙" : "Light mode enabled! ☀️",
+  );
+});
+
+function updateThemeIcon(theme) {
+  const icon = themeToggle.querySelector("i");
+  icon.className = theme === "dark" ? "fas fa-moon" : "fas fa-sun";
+}
 
 
 // ==========================================
@@ -394,6 +416,10 @@ window.addEventListener("scroll", () => {
 // 18. KEYBOARD NAVIGATION - Accessibility
 // ==========================================
 document.addEventListener("keydown", (e) => {
+  // Press 'T' to toggle theme
+  if (e.key === "t" || e.key === "T") {
+    themeToggle.click();
+  }
 
   // Press 'Escape' to close mobile menu
   if (e.key === "Escape") {
