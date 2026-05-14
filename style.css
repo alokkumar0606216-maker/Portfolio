@@ -206,7 +206,6 @@ img {
   align-items: center;
 }
 
-.theme-toggle,
 .hamburger {
   background: none;
   border: none;
@@ -216,10 +215,6 @@ img {
   transition: var(--transition);
 }
 
-.theme-toggle:hover {
-  color: var(--primary);
-  transform: scale(1.1);
-}
 
 .hamburger {
   display: none;
