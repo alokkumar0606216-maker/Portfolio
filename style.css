@@ -144,6 +144,7 @@ img {
 .logo {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 #nav-logo {
@@ -152,10 +153,22 @@ img {
   border-radius: 50%;
   object-fit: cover;
   transition: var(--transition);
+  border: 2px solid var(--primary);
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.logo-text .highlight {
+  color: var(--primary);
 }
 
 #nav-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(5deg);
 }
 
 .nav-menu {
