@@ -24,12 +24,12 @@
 
 /* Dark Theme */
 [data-theme="dark"] {
-  --bg-primary: #0f0f1a;
-  --bg-secondary: #1a1a2e;
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
-  --card-bg: #1a1a2e;
-  --nav-bg: rgba(15, 15, 26, 0.95);
+  --card-bg: #111111;
+  --nav-bg: rgba(0, 0, 0, 0.95);
 }
 
 /* Reset & Base */
@@ -155,10 +155,6 @@ img {
   border: 2px solid var(--primary);
 }
 
-#nav-logo:hover {
-  transform: scale(1.1) rotate(5deg);
-}
-
 .nav-menu {
   display: flex;
   gap: 30px;
@@ -218,6 +214,14 @@ img {
 .theme-toggle:hover {
   color: var(--primary);
   transform: scale(1.1);
+}
+
+.theme-toggle .fa-sun {
+  color: #f59e0b;
+}
+
+.theme-toggle .fa-moon {
+  color: #818cf8;
 }
 
 
@@ -346,6 +350,12 @@ img {
   color: white;
 }
 
+[data-theme="dark"] .btn-outline {
+  background: #000000;
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
 .hero-stats {
   display: flex;
   gap: 40px;
@@ -426,14 +436,6 @@ img {
   animation: bounce 2s infinite;
 }
 
-.mouse {
-  width: 25px;
-  height: 40px;
-  border: 2px solid var(--text-secondary);
-  border-radius: 15px;
-  position: relative;
-}
-
 .wheel {
   width: 4px;
   height: 8px;
@@ -475,7 +477,6 @@ section {
   background: var(--bg-secondary);
   position: relative;
   overflow: hidden;
-  border-bottom: 4px solid var(--primary);
 }
 
 .section-header {

@@ -18,6 +18,7 @@ const projectCards = document.querySelectorAll(".project-card");
 const statNumbers = document.querySelectorAll(".stat-number");
 const navLinks = document.querySelectorAll(".nav-link");
 const downloadCV = document.getElementById("download-cv");
+const downloadCVHero = document.getElementById("download-cv-hero");
 
 // ==========================================
 // 1. LOADER - Page Load Animation
@@ -339,6 +340,20 @@ downloadCV.addEventListener("click", (e) => {
     btn.innerHTML = originalText;
   }, 1500);
 });
+
+if (downloadCVHero) {
+  downloadCVHero.addEventListener("click", (e) => {
+    e.preventDefault();
+    const btn = downloadCVHero;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+
+    setTimeout(() => {
+      showToast("success", "CV download started! 📄");
+      btn.innerHTML = originalText;
+    }, 1500);
+  });
+}
 
 // ==========================================
 // 13. SMOOTH SCROLL - Navigation Links
