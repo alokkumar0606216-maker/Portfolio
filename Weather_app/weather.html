@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Weather App</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="weather-app">
+        <!-- Search Section -->
+        <div class="search-box">
+            <i class='bx bx-map location-icon'></i>
+            <input type="text" id="city-input" placeholder="Search for a city...">
+            <button id="location-btn" title="Current Location" class="icon-btn"><i class='bx bx-target-lock'></i></button>
+            <button id="search-btn" title="Search" class="icon-btn primary"><i class='bx bx-search'></i></button>
+        </div>
+
+        <!-- Initial Welcome State -->
+        <div class="state-container active" id="welcome-state">
+            <i class='bx bx-cloud-lightning welcome-icon'></i>
+            <h2>Weather Forecast</h2>
+            <p>Enter a city name or use your current location to get started.</p>
+        </div>
+
+        <!-- Loader State -->
+        <div class="state-container" id="loader-state">
+            <div class="spinner"></div>
+            <p>Fetching real-time weather...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="state-container" id="error-state">
+            <i class='bx bx-error-circle error-icon'></i>
+            <h2>Oops!</h2>
+            <p>City not found or network issue. Please try again.</p>
+        </div>
+
+        <!-- Weather Display Section -->
+        <div class="weather-box" id="weather-box">
+            <div class="main-weather">
+                <div class="weather-icon-container">
+                    <i class='bx bxs-sun' id="weather-icon"></i>
+                </div>
+                
+                <div class="temperature">
+                    <span id="temp-value">--</span><span class="unit">°C</span>
+                </div>
+                
+                <div class="description" id="weather-desc">--</div>
+                <div class="location" id="location-name">--</div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-card">
+                    <i class='bx bx-droplet'></i>
+                    <div class="detail-info">
+                        <span id="humidity-value">--%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <i class='bx bx-wind'></i>
+                    <div class="detail-info">
+                        <span id="wind-value">-- km/h</span>
+                        <p>Wind</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <i class='bx bx-sun'></i>
+                    <div class="detail-info">
+                        <span id="uv-index">--</span>
+                        <p>UV Index</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <i class='bx bx-tachometer'></i>
+                    <div class="detail-info">
+                        <span id="pressure">-- hPa</span>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past 5 Days Hourly History -->
+            <div class="forecast-section" style="margin-top: 20px;">
+                <h3>Past 5 Days Hourly History</h3>
+                <div class="history-list" id="history-container">
+                    <!-- Hourly history grouped by day will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="weather.js"></script>
+</body>
+</html>
